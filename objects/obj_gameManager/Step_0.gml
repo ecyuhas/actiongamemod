@@ -18,7 +18,17 @@ if (!instance_exists(obj_player2) && !greenSet)
 	global.player2Score--;
 }
 
-
+if (keyboard_check_pressed(vk_escape))
+   {
+   if window_get_fullscreen()
+      {
+      window_set_fullscreen(false);
+      }
+   else
+      {
+      window_set_fullscreen(true);
+      }
+   }
 /*
 var p0 = instance_find(obj_players,0); 
 if (p0 != noone && p0.dead == true) { // check that we found something and if so, that they are gone

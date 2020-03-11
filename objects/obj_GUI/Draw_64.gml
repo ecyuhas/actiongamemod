@@ -14,3 +14,5 @@ draw_set_halign(fa_right);
 
 	draw_text_transformed_colour(ww-10,-5,global.player2Score,3,3,0,c_green,c_green,c_black,c_black,1);
 
+//draw_rectangle_colour(0, 0, 160, 480, c_black, c_white, c_black, c_white, false);
+draw_line(480 , 0, 480, 600);
