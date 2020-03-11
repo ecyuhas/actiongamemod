@@ -29,6 +29,11 @@ if (keyboard_check_pressed(vk_escape))
       window_set_fullscreen(true);
       }
    }
+   
+if (keyboard_check_pressed(ord("R")))
+{
+	game_restart();
+}
 /*
 var p0 = instance_find(obj_players,0); 
 if (p0 != noone && p0.dead == true) { // check that we found something and if so, that they are gone

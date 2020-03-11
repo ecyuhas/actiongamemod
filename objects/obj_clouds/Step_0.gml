@@ -23,7 +23,7 @@ if (collided)
 	
 }
 
-if (y > 300)
+if (y > room_height)
 {
 	instance_destroy(self);
 }

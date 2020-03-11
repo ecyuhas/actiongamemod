@@ -6,7 +6,8 @@
 
 grav = 0.2;
 
-jumpVel = -5;
+jumpVel = -6;
+ogJV = -6;
 launchVel = -9;
 jumpVel = launchVel;
 launch = false;

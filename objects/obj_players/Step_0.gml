@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if (y < 320 && !dead)
+if (y < room_height && !dead)
 {
 if (keyboard_check(left)) {
 		xVel -= xAccel;	
@@ -82,11 +82,8 @@ while (yMove != 0) {
 	
 	if (!colliding || dead) {
 		image_index = 1;
-		
 		y += signY;
 		yMove -= signY;	
-	
-
 	}
 	else {
 		audio_play_sound(snd_jump, 1, false);
@@ -109,7 +106,7 @@ if (yVel > 1)
 else if (yVel > 0)
 {
 	image_index = 0;
-	jumpVel = -5;
+	jumpVel = ogJV;
 	launch = false;
 }
 
@@ -125,7 +122,7 @@ if (dead) {
 }
 
 
-if (y >= 320 && !launch)
+if (y >= room_height && !launch)
 {
 	if (!dead)
 	{
@@ -135,7 +132,7 @@ if (y >= 320 && !launch)
 	instance_destroy(self);
 }
 
- y = clamp(y, 0, 320);
+ y = clamp(y, 0, room_height);
 
 
 

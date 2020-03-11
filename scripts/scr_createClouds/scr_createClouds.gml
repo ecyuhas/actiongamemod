@@ -1,4 +1,4 @@
-array1 = argument[0];
+/*array1 = argument[0];
 array2 = argument[1];
 array3 = argument[2];
 length = 12;

@@ -7,3 +7,4 @@ image_index = 0;
 cloudStage = 0;
 collided = false;
 alarm[0] = 10;
+level = -1;

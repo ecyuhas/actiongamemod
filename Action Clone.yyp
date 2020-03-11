@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "2fa1dc19-82b3-4280-8df9-a323fa8dcf9b",
+            "Value": {
+                "id": "60be7932-f894-4ccb-8b5b-9b7a608e257f",
+                "resourcePath": "objects\/obj_cloudManager\/obj_cloudManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "310dfd88-904b-4955-8a48-fd381ab64abe",
             "Value": {
                 "id": "a2b20e31-3bd8-4b59-a3d3-5a4b9ad5266a",
@@ -556,6 +564,14 @@
                 "id": "fdaca45e-9f50-4d9c-8d99-28e9ef2d9295",
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f5b59878-b978-4410-a790-e4873e8ef76a",
+            "Value": {
+                "id": "afde3b1b-0034-453c-969c-6953397e16ce",
+                "resourcePath": "objects\/obj_startCloud\/obj_startCloud.yy",
+                "resourceType": "GMObject"
             }
         },
         {
