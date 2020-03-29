@@ -17,22 +17,21 @@ if (!instance_exists(obj_player2) && !greenSet)
 	alarm[2] = room_speed * 2;
 	global.player2Score--;
 }
-
-if (keyboard_check_pressed(vk_escape))
-   {
-   if window_get_fullscreen()
-      {
-      window_set_fullscreen(false);
-      }
-   else
-      {
-      window_set_fullscreen(true);
-      }
-   }
-   
-if (keyboard_check_pressed(ord("R")))
+if (instance_exists(obj_player2))
 {
-	game_restart();
+	global.player2DistancePercent = ((4000 - obj_player2.y) / (4000 - obj_endCloud.y)) * 600;
+}
+else
+{
+	global.player2DistancePercent = 0;
+}
+if (instance_exists(obj_player1))
+{
+	global.player1DistancePercent = ((4000 - obj_player1.y) / (4000 - obj_endCloud.y)) * 600;
+}
+else
+{
+	global.player1DistancePercent = 0;
 }
 /*
 var p0 = instance_find(obj_players,0); 

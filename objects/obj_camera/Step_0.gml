@@ -52,6 +52,19 @@ else if (!instance_exists(obj_player1) && !instance_exists(obj_player2))
 		y = defaultY;
 }
 */
+/*
+win_wid=window_get_width();
+win_hgt=window_get_height();
+if (window_get_fullscreen())
+{
+	win_wid = display_get_width();
+	win_hgt = display_get_height();
+}
+view_hport[cameraNumber]=win_hgt;
+view_wport[cameraNumber]=win_wid/2 + (cameraNumber * win_wid/2);
+camera_set_view_size(view_camera[cameraNumber], 160, 200);
+*/
+//camera_set_view_size(maincam,win_wid/scale,win_hgt/scale);
 if (instance_exists(playerFollowing))
 {
 	if (playerFollowing.y > defaultY)

@@ -1,7 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Make Start cloud
+// Make end cloud
+endCloud = instance_create_layer(80, room_height - (1275 * global.roundNumber), "Clouds", obj_endCloud);
+
+
 alarmed = false;
 cloudLevelToRepair = -1;
 //startCloud = instance_create_layer(0, room_height - 25, "Instances", obj_startCloud);
@@ -11,10 +14,14 @@ for (var i = 0; i < 30; i++)
 	global.arrayCloudLevelNeedCloud[i] = false;
 }
 
+
+verticalGap = 50 + (2*global.roundNumber);
+levelsToHave = round((room_height - obj_endCloud.y) / verticalGap);
+show_debug_message(string(levelsToHave));
 array0[0,0] = 1;
 for (var i = 0; i < 2; i++)
 {
-	for (var j = 0; j < 30; j++)
+	for (var j = 0; j < levelsToHave; j++)
 	{
 		if (i == 0)
 		{
@@ -22,7 +29,7 @@ for (var i = 0; i < 2; i++)
 		}
 		else 
 		{
-			array0[j, i] = room_height - (30 * j);
+			array0[j, i] = room_height - (verticalGap * j);
 		}
 	}
 }
@@ -30,7 +37,7 @@ for (var i = 0; i < 2; i++)
 array1[0,0] = 1;
 for (var i = 0; i < 2; i++)
 {
-	for (var j = 0; j < 30; j++)
+	for (var j = 0; j < levelsToHave; j++)
 	{
 		if (i == 0)
 		{
@@ -38,7 +45,7 @@ for (var i = 0; i < 2; i++)
 		}
 		else 
 		{
-			array1[j, i] = room_height - (30 * j);
+			array1[j, i] = room_height - (verticalGap * j);
 		}
 	}
 }
@@ -46,7 +53,7 @@ for (var i = 0; i < 2; i++)
 array2[0,0] = 1;
 for (var i = 0; i < 2; i++)
 {
-	for (var j = 0; j < 30; j++)
+	for (var j = 0; j < levelsToHave; j++)
 	{
 		if (i == 0)
 		{
@@ -54,13 +61,14 @@ for (var i = 0; i < 2; i++)
 		}
 		else 
 		{
-			array2[j, i] = room_height - (30 * j);
+			array2[j, i] = room_height - (verticalGap * j);
 		}
 	}
 }
 
 // LET'S PLACE SOME CLOOOOOOOOUUUUUUUUUUUUDS!!!!
-for (var c = 0; c < 30; c++)
+
+for (var c = 0; c < levelsToHave; c++)
 {
 	rand = choose(0, 1, 2);
 	if (rand == 0)
@@ -77,7 +85,7 @@ for (var c = 0; c < 30; c++)
 	}
 	xPos = arrayToUse[c, 0];
 	yPos = arrayToUse[c, 1];
-	cloud = instance_create_layer(xPos, yPos, "Instances", obj_clouds);
+	cloud = instance_create_layer(xPos, yPos, "Clouds", obj_clouds);
 	cloud.level = c;
 }
 

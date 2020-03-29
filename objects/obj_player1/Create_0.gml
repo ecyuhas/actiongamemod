@@ -6,8 +6,8 @@
 	right = ord("D");
 	up = ord("W");
 	down = ord("S");
-	sprite_left = spr_playerOrange_left;
-	sprite_right = spr_playerOrange_right;
+	sprite_left = spr_sheep_jump_left;
+	sprite_right = spr_sheep_jump_right;
 	sprite_death = spr_playerOrange_death;
 	space = 0;
 	once = true;

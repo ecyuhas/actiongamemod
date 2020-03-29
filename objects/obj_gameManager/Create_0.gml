@@ -1,11 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+global.player2DistancePercent = 0;
+global.player1DistancePercent = 0;
 
-// FONT --------------
-global.map_string = "0123456789-";
-global.font = font_add_sprite_ext(spr_font, global.map_string, false, 0 );
-draw_set_font(global.font);
-
+//show_debug_message("I AM CREATED");
 // PLAYERS -----------------
 //orange = instance_create_layer(150, 410, "Instances", obj_player1);
 orangeSet = false;
@@ -17,4 +15,8 @@ global.player1Score = 1;
 global.player2Score =  1;
 gui = instance_create_layer(x, y, "Instances", obj_GUI);
 cloudManager = instance_create_layer(0, 0, "Instances", obj_cloudManager);
+
+// Game Ended?
+global.gameEnded = false;
+
 

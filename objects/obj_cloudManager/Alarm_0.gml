@@ -16,7 +16,7 @@ rand = choose(0, 1, 2);
 	}
 	xPos = arrayToUse[cloudLevelToRepair, 0];
 	yPos = arrayToUse[cloudLevelToRepair, 1];
-	cloud = instance_create_layer(xPos, yPos, "Instances", obj_clouds);
+	cloud = instance_create_layer(xPos, yPos, "Clouds", obj_clouds);
 	cloud.level = cloudLevelToRepair;
 	alarmed = false;
 	

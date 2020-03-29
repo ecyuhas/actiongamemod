@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+if (!global.gameEnded)
+{
 if (y < room_height && !dead)
 {
 if (keyboard_check(left)) {
@@ -56,13 +57,14 @@ var signY = sign(yVel);
 while (yMove != 0) {
 	var colliding = false;
 	var collideWith = noone;
+	var collideWithEnd = noone;
 	var collideWithPlayer = noone;
 	if (signY >= 0) {
 		collideWith = instance_place(x, y + signY, obj_clouds);
 		collideWithPlayer = instance_place(x, y + signY, obj_players);
+		collideWithEnd = instance_place(x, y + signY, obj_endCloud);
 		if (collideWith != noone)
 		{
-			
 			if (!place_meeting(x, y, collideWith)) {
 				colliding = true;
 				collideWith.collided = true;
@@ -75,6 +77,15 @@ while (yMove != 0) {
 			if (!place_meeting(x, y, collideWithPlayer)) {
 				colliding = true;
 				collideWithPlayer.dead = true;
+				image_index = 0;
+			}
+		}
+		if (collideWithEnd != noone)
+		{
+			
+			if (!place_meeting(x, y, collideWithEnd)) {
+				//colliding = true;
+				collideWithEnd.collided = true;
 				image_index = 0;
 			}
 		}
@@ -134,7 +145,7 @@ if (y >= room_height && !launch)
 
  y = clamp(y, 0, room_height);
 
-
+}
 
 /*
 //Player Step
