@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Make end cloud
-endCloud = instance_create_layer(80, room_height - (1275 * global.roundNumber), "Clouds", obj_endCloud);
+endCloud = instance_create_layer(80, room_height - ((4000 / global.maxRounds) * global.roundNumber), "Clouds", obj_endCloud);
 
 
 alarmed = false;

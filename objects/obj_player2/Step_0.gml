@@ -3,7 +3,7 @@
 
 if (dead && once)
 {
-	global.player1Score++;
+	//global.player1Score++;
 	once = false;
 } 
 

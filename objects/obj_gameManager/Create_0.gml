@@ -11,8 +11,7 @@ orangeSet = false;
 greenSet = false;
 camera1 = instance_create_layer(80, room_height - 100, "Instances", obj_camera1);
 camera2 = instance_create_layer(80, room_height - 100, "Instances", obj_camera2);
-global.player1Score = 1;
-global.player2Score =  1;
+
 gui = instance_create_layer(x, y, "Instances", obj_GUI);
 cloudManager = instance_create_layer(0, 0, "Instances", obj_cloudManager);
 

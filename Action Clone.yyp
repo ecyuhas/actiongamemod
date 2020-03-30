@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "6a459f2c-884f-4e55-85de-9e7fad23c087",
+            "Value": {
+                "id": "6d7ace13-f524-452b-8ebb-92d7d8b52b77",
+                "resourcePath": "rooms\/rm_endScreem\/rm_endScreem.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "6b4418a6-cea0-468d-90d9-b83debeb2742",
             "Value": {
                 "id": "df2a9e93-19b2-44f7-a1af-ba0e5b369dbd",
@@ -495,6 +503,14 @@
             }
         },
         {
+            "Key": "9a9ce36f-1f12-4130-a8cc-6b7f691f32ec",
+            "Value": {
+                "id": "a47d27a7-175b-4f0b-a0a0-439a621c96ec",
+                "resourcePath": "objects\/obj_GUIButton\/obj_GUIButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9aa7fae3-d1ee-4efe-ba2d-4528b87f77f3",
             "Value": {
                 "id": "a32ec2b2-ec9f-41de-8c63-51b23108f726",
@@ -572,6 +588,14 @@
                 "id": "2b4857d9-5433-47f8-ad45-17824e19b472",
                 "resourcePath": "views\/b3da5284-55fb-46c0-9309-12f140cb1815.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b4dc8e7c-a3e4-4ea5-b503-b22e32827b09",
+            "Value": {
+                "id": "cab80a41-09a3-4190-81a2-226921bbf439",
+                "resourcePath": "objects\/obj_endLevel\/obj_endLevel.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -692,6 +716,14 @@
                 "id": "b82a76a9-d4b6-4513-b882-5e8f64261921",
                 "resourcePath": "options\/android\/options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e610fe77-df97-41a0-a489-b511c686142d",
+            "Value": {
+                "id": "4aad3efc-ca4d-44ed-8ebc-28b4740c027c",
+                "resourcePath": "sprites\/spr_endCloud\/spr_endCloud.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

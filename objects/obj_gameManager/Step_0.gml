@@ -6,7 +6,7 @@ if (!instance_exists(obj_player1) && !orangeSet)
 	//show_debug_message("Here");
 	orangeSet = true;
 	alarm[1] = room_speed * 2;
-	global.player1Score--;
+	//global.player1Score--;
 	
 }
 
@@ -15,7 +15,7 @@ if (!instance_exists(obj_player2) && !greenSet)
 	//show_debug_message("Here2");
 	greenSet = true;
 	alarm[2] = room_speed * 2;
-	global.player2Score--;
+	//global.player2Score--;
 }
 if (instance_exists(obj_player2))
 {

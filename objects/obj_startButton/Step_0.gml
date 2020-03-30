@@ -16,6 +16,10 @@ if (position_meeting(mouse_x, mouse_y, self))
 			room_instance_add(nextLevel, 80, 1020 + (150 + global.roundNumber) - 150, obj_endCloud);
 			room_set_view_enabled(nextLevel, true);
 			room_goto(nextLevel);*/
+			//"2 out of 3", "3 out of 5", "4 out of 7", "Unlimited"
+			if (obj_menu.text = "2 out of 3") { global.maxRounds = 3; global.minToWin = 2; global.maxRounds = 3;}
+			if (obj_menu.text = "3 out of 5") { global.maxRounds = 5; global.minToWin = 3; global.maxRounds = 5;}
+			if (obj_menu.text = "4 out of 7") { global.maxRounds = 7; global.minToWin = 4; global.maxRounds = 7;}
 			room_goto_next();
 		}
 		else 

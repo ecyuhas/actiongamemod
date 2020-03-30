@@ -12,7 +12,7 @@ image_speed = 0;
 image_index = 0;
 
 menuList = ds_list_create();
-ds_list_add(menuList, "2 out of 3", "3 out of 5", "Unlimited");
+ds_list_add(menuList, "2 out of 3", "3 out of 5", "4 out of 7");
 text = "Choose...";
 
 //glitter = $EAE8FF;

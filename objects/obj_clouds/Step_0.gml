@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (!global.gameEnded)
+{
 if (collided)
 {
 	image_speed = 1;
@@ -26,4 +28,5 @@ if (collided)
 if (y > room_height)
 {
 	instance_destroy(self);
+}
 }

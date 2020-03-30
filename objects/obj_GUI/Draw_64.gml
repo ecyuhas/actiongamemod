@@ -22,11 +22,11 @@ draw_set_halign(fa_right);
 //draw_rectangle_colour(0, 0, 160, 480, c_black, c_white, c_black, c_white, false);
 draw_line_width_color(480 , 0, 480, 600, 3, fieryRose, fieryRose);
 
-draw_line_width_color(482, 600, 482, player2line, 2,  $D4AF37, $D4AF37);
+draw_line_width_color(482, 600, 482, player2line, 2, c_black, c_black);
 
 draw_sprite(spr_markers, 1, 495, player2marker);
 
-draw_line_width_color(478, 600, 478, player1line, 2,  $D4AF37, $D4AF37);
+draw_line_width_color(478, 600, 478, player1line, 2, c_black, c_black);
 
 draw_sprite(spr_markers, 0, 465, player1marker);
 //draw_set_halign(fa_center);
